@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="example.lowestcastpath.com.lowestcastpath.MainActivity">
+
+    <EditText
+        android:id="@+id/rows_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Rows"
+        android:inputType="number"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/columns_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Columns"
+        android:inputType="number"
+        android:textColor="@android:color/black" />
+
+
+    <EditText
+        android:id="@+id/values_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="20"
+        android:hint="Enter values separated by #"
+        android:inputType="text|number"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/find_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Find"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/clear_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Clear"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Result"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black" />
+</LinearLayout>
